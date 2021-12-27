@@ -1,0 +1,5 @@
+$  docker-compose run --rm web rails new . --force --no-deps --database=mysql --skip-turbolinks
+$  docker-compose run --rm web bin/rails webpacker:install
+$  docker-compose build
+$  docker-compose run web bin/rails db:create
+$  docker-compose up
